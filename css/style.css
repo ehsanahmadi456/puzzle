@@ -1,0 +1,208 @@
+body {
+  background: linear-gradient(45deg, rgb(136, 136, 136), #999);
+  height: 120vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+#hideResult {
+  display: none;
+}
+
+#showResult {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 315px;
+  height: 210px;
+  border-radius: 10px;
+  background-color: #fff3e5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#showResult h3 {
+  width: fit-content;
+  margin: 50px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#showResult button {
+  background: #cac8c8;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#showResult button:hover {
+  background: #b4b4b4;
+  transform: translateY(-3%);
+}
+
+#puzzle {
+  width: 550px;
+  height: 550px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 1px;
+  margin: 20px auto 0;
+  background-color: #777;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.puzzle_item {
+  height: 133px;
+  width: 133px;
+  font-size: 0.1px;
+  cursor: pointer;
+}
+
+#start {
+  width: 170px;
+  margin: 20px auto 0;
+  border: 2px solid #999;
+  height: 40px;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+  background-color: #999;
+  box-shadow: 3px 3px 15px #fff;
+  text-shadow: 0 0 10px #000;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+#p11 {
+  background: url("../image/p11.jpg");
+}
+
+#p12 {
+  background: url("../image/p12.jpg");
+}
+
+#p13 {
+  background: url("../image/p13.jpg");
+}
+
+#p14 {
+  background: url("../image/p14.jpg");
+}
+
+#p21 {
+  background: url("../image/p21.jpg");
+}
+
+#p22 {
+  background: url("../image/p22.jpg");
+}
+
+#p23 {
+  background: url("../image/p23.jpg");
+}
+
+#p24 {
+  background: url("../image/p24.jpg");
+}
+
+#p31 {
+  background: url("../image/p31.jpg");
+}
+
+#p32 {
+  background: url("../image/p32.jpg");
+}
+
+#p33 {
+  background: url("../image/p33.jpg");
+}
+
+#p34 {
+  background: url("../image/p34.jpg");
+}
+
+#p41 {
+  background: url("../image/p41.jpg");
+}
+
+#p42 {
+  background: url("../image/p42.jpg");
+}
+
+#p43 {
+  background: url("../image/p43.jpg");
+}
+
+#p44 {
+  background: url("../image/p44.jpg");
+}
+
+#start:hover {
+  color: #d1d1d1;
+  text-shadow: 0 0 10px #b6b6b6;
+}
+
+#p11,
+#p12,
+#p13,
+#p14,
+#p21,
+#p22,
+#p23,
+#p24,
+#p31,
+#p32,
+#p33,
+#p34,
+#p41,
+#p42,
+#p43,
+#p44 {
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+#change {
+  width: 233px;
+  margin: 50px auto 0;
+  border: 2px solid #999;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 10px;
+  color: #000;
+  background-color: #999;
+  box-shadow: 0 0 20px #fff;
+  text-shadow: 0 0 10px #000;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+/* 350 530 */
+
+@media (max-width: 720px) {
+  #puzzle {
+    width: 370px;
+    height: 450px;
+  }
+
+  .puzzle_item {
+    width: 82px;
+    margin: 5px;
+    padding: 0 !important;
+    height: 100px;
+  }
+}
